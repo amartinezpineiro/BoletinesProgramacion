@@ -42,16 +42,13 @@ public class Consumo {
     }
 
     //métodos
-    public double getTempo(double km, double vMed){
-        double tempo=km/vMed*60;
-        return tempo;
+    public double getTempo(){
+        return km/vMed*60;
     }
-    public double consumoMedio(double km, double litros){
-        double consMed=km/litros;
-        return consMed;
+    public double consumoMedio(){
+        return 100*litros/km;
     }
-    public double consumoEuros(double litros, double pGas){
-        double consEu=litros*pGas;
-        return consEu;
+    public double consumoEuros(){
+        return consumoMedio()*pGas;
     }
 }
