@@ -1,15 +1,13 @@
-package Boletines.BoletinExtra2;
+package Boletines.BoletinExtraViernes;
 
 import java.util.Scanner;
 
-public class BoletinExtra2_2 {
+public class BoletinExtraViernes_2 {
 
     public static void main(String[] args) {
         double a;
         double b;
         double c;
-        double x1;
-        double x2;
         Scanner sc=new Scanner(System.in);
         System.out.println("Introduce el valor de a: ");
         a=sc.nextDouble();
