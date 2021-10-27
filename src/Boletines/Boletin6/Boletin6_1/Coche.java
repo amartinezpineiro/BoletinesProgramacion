@@ -5,18 +5,20 @@ public class Coche {
     private int velocidade;
 
     //constructores
-    public Coche(){
-        velocidade=0;
+    public Coche() {
+        velocidade = 0;
     }
 
     //métodos
-    public int getVelocidade(){
+    public int getVelocidade() {
         return velocidade;
     }
-    public void acelerar(int a){
-        velocidade=velocidade+a;
+
+    public void acelerar(int a) {
+        velocidade += a;
     }
-    public void frenar(int b){
-        velocidade=velocidade-b;
+
+    public void frenar(int b) {
+        velocidade -= b;
     }
 }

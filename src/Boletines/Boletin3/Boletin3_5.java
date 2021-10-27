@@ -9,16 +9,16 @@ public class Boletin3_5 {
         double km;
         double dietas;
         double ventas;
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Introduce el sueldo fijo: ");
-        sueldo=sc.nextDouble();
+        sueldo = sc.nextDouble();
         System.out.println("Introduce el importe en ventas: ");
-        ventas=sc.nextDouble();
+        ventas = sc.nextDouble();
         System.out.println("Introduce los km de desprazamento: ");
-        km=sc.nextDouble();
+        km = sc.nextDouble();
         System.out.println("Introduce la cantidad de días que trabajas: ");
-        dietas=sc.nextDouble();
-        System.out.println("El sueldo bruto es: "+(sueldo+(ventas*0.05)+(km*2)+(dietas*30))+" euros\nEl sueldo líquido es: "+((sueldo+(ventas*0.05)+(km*2)+(dietas*30))*0.18-36)+" euros");
+        dietas = sc.nextDouble();
+        System.out.println("El sueldo bruto es: " + (sueldo + (ventas * 0.05) + (km * 2) + (dietas * 30)) + " euros\nEl sueldo líquido es: " + ((sueldo + (ventas * 0.05) + (km * 2) + (dietas * 30)) * 0.18 - 36) + " euros");
     }
 
 }
