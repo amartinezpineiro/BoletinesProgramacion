@@ -36,11 +36,11 @@ public class Persona {
     //métodos
     public void comparar(Persona a, Persona b) {
         if (a.getPeso() > b.getPeso()) {
-            System.out.println(a.getNombre() + " pesa más que " + b.getNombre());
+            System.out.println(a.getNombre() + " pesa "+(a.getPeso()-b.getPeso())+" más que " + b.getNombre());
         } else if (a.getPeso() == b.getPeso()) {
             System.out.println(a.getNombre() + " pesa lo mismo que " + b.getNombre());
         } else {
-            System.out.println(a.getNombre() + " pesa menos que " + b.getNombre());
+            System.out.println(b.getNombre() + " pesa "+(b.getPeso()-a.getPeso())+" más que " + a.getNombre());
         }
     }
 

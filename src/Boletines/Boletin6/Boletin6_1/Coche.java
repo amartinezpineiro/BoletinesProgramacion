@@ -1,24 +1,34 @@
 package Boletines.Boletin6.Boletin6_1;
 
 public class Coche {
-    //atributos
-    private int velocidade;
+    //attributes
+    private int speed;
 
-    //constructores
+    //constructors
     public Coche() {
-        velocidade = 0;
+        speed = 0;
     }
 
-    //métodos
-    public int getVelocidade() {
-        return velocidade;
+    //methods
+    public int getSpeed() {
+        return speed;
     }
 
-    public void acelerar(int a) {
-        velocidade += a;
+    /**
+     * Description of what the method does
+     *
+     * @param incriseSpeed indicates what speed is incrised
+     */
+    public void accelerate(int incriseSpeed) {
+        speed += incriseSpeed;
     }
 
-    public void frenar(int b) {
-        velocidade -= b;
+    /**
+     * Description of what the method does
+     *
+     * @param reduceSpeed indicates what speed is reduced
+     */
+    public void brake(int reduceSpeed) {
+        speed -= reduceSpeed;
     }
 }
