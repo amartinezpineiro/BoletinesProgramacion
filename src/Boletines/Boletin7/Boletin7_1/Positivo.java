@@ -9,19 +9,19 @@ public class Positivo {
         System.out.println("Teclea un número ");
         int num1 = sc.nextInt();
         if (num1 > 0) {
-            System.out.println("es positivo");
+            System.out.println(num1+" es positivo");
         } else if (num1 < 0) {
-            System.out.println("es negativo");
+            System.out.println(num1+" es negativo");
         } else {
-            System.out.println("es 0");
+            System.out.println(num1+" es 0");
         }
         int num2 = Integer.parseInt(JOptionPane.showInputDialog("teclea un número"));
         if (num1 > 0) {
-            JOptionPane.showMessageDialog(null, "es positivo");
+            JOptionPane.showMessageDialog(null, num1+" es positivo");
         } else if (num1 < 0) {
-            JOptionPane.showMessageDialog(null, "es negativo");
+            JOptionPane.showMessageDialog(null, num1+" es negativo");
         } else {
-            JOptionPane.showMessageDialog(null, "es 0");
+            JOptionPane.showMessageDialog(null, num1+" es 0");
         }
     }
 }

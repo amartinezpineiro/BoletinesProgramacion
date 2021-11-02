@@ -16,10 +16,8 @@ public class Suma {
         short num1 = pedirShort();
         short num2 = pedirShort();
         if (num1 >= num2) {
-            System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
             System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
-        } else {
-            System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
         }
+        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
     }
 }
