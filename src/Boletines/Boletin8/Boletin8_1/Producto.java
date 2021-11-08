@@ -33,7 +33,7 @@ public class Producto {
     }
 
     //métodos
-    public void getArtigo(Producto a){
+    public void pedirArtigo(Producto a){
 
         if(a.getVentas()<=100){
             System.out.println("o artigo de consumo é baixo");

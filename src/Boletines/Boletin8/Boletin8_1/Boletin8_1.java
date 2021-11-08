@@ -5,7 +5,7 @@ public class Boletin8_1 {
         Producto obx1=new Producto();
         obx1.pedirNome();
         obx1.pedirVentas();
-        obx1.getArtigo(obx1);
+        obx1.pedirArtigo(obx1);
 
     }
 }
