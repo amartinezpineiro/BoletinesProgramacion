@@ -63,14 +63,22 @@ public class Figura {
                 "Triangulo",
                 "Circulo"
         };
-        a.setTipo((String) JOptionPane.showInputDialog(null, "Selecciona el tipo de figura", "Figura", JOptionPane.DEFAULT_OPTION, null, figuras, figuras[0]));
-        if(a.getTipo() == "Cadrado"){
+        a.setTipo((String) JOptionPane.showInputDialog(null, "Selecciona el tipo de figura", "Figura", JOptionPane.INFORMATION_MESSAGE, null, figuras, figuras[0]));
+        /*if(a.getTipo().equals("Cadrado")){
             a.setLado(Double.parseDouble(JOptionPane.showInputDialog("Introduce el lado")));
-        }else if(a.getTipo() == "Triangulo"){
+        }else if(a.getTipo().equals("Triangulo")){
             a.setBase(Double.parseDouble(JOptionPane.showInputDialog("Introduce la base")));
             a.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Introduce la altura")));
-        }else if(a.getTipo() == "Circulo"){
+        }else if(a.getTipo().equals("Circulo")){
             a.setRadio(Double.parseDouble(JOptionPane.showInputDialog("Introduce el radio")));
+        }*/
+        switch (a.getTipo()) {
+            case "Cadrado" -> a.setLado(Double.parseDouble(JOptionPane.showInputDialog("Introduce el lado")));
+            case "Triangulo" -> {
+                a.setBase(Double.parseDouble(JOptionPane.showInputDialog("Introduce la base")));
+                a.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Introduce la altura")));
+            }
+            case "Circulo" -> a.setRadio(Double.parseDouble(JOptionPane.showInputDialog("Introduce el radio")));
         }
     }
 
@@ -83,13 +91,10 @@ public class Figura {
         }else if(a.getTipo() == "Circulo"){
             JOptionPane.showMessageDialog(null, "el area es: " + (Math.pow(a.getRadio(),2)*3.14159));
         }*/
-        switch (a.getTipo()){
-            case "Cadrado":JOptionPane.showMessageDialog(null, "el area es: " + (Math.pow(a.getLado(),2)));
-            break;
-            case "Triangulo":JOptionPane.showMessageDialog(null, "el area es: " + (a.getBase()*a.getAltura()/2));
-            break;
-            case "Ciruclo":JOptionPane.showMessageDialog(null, "el area es: " + (Math.pow(a.getRadio(),2)*3.14159));
-            break;
+        switch (a.getTipo()) {
+            case "Cadrado" -> JOptionPane.showMessageDialog(null, "el area es: " + (Math.pow(a.getLado(), 2)));
+            case "Triangulo" -> JOptionPane.showMessageDialog(null, "el area es: " + (a.getBase() * a.getAltura() / 2));
+            case "Circulo" -> JOptionPane.showMessageDialog(null, "el area es: " + (Math.pow(a.getRadio(), 2) * 3.14159));
         }
     }
 }
