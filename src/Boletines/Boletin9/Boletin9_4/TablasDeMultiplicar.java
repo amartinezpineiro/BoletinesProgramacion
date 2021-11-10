@@ -3,7 +3,7 @@ package Boletines.Boletin9.Boletin9_4;
 import java.util.Scanner;
 
 public class TablasDeMultiplicar {
-    public void pedirNumero(){
+    /*public void pedirNumero(){
         Scanner sc=new Scanner(System.in);
         System.out.println("introduce un numero para visualizar su tabla de multiplicar");
         int num=sc.nextInt();
@@ -12,5 +12,19 @@ public class TablasDeMultiplicar {
             System.out.println("introduce un numero para visualizar su tabla de multiplicar");
             num=sc.nextInt();
         }
+    }*/
+    public void pedirNumero(){
+        int num;
+        Scanner sc=new Scanner(System.in);
+        do{
+            System.out.println("introduce un numero para visualizar su tabla de multiplicar o introduce '0' para salir");
+            num=sc.nextInt();
+            if(num==0){
+                break;
+            }
+            for (int i = 0; i < 10; i++) {
+                System.out.println(num+" * "+i+" = "+(num*i));
+            }
+        }while(num!=0);
     }
 }
