@@ -4,32 +4,35 @@ import javax.swing.*;
 import java.util.Scanner;
 
 public class Xogo {
-    public int pedirNumero(){
-        Scanner numero=new Scanner(System.in);
-        JOptionPane.showInputDialog(null, "Introduce un número entre 1 y 50");
-        int num=numero.nextInt();
-        while(num<1||num>50) {
-            JOptionPane.showInputDialog(null, "El valor introducido no es correcto, Introduce un número entre 1 y 50");
-            num = numero.nextInt();
-        }
-        return num;
-    }
     public void adivinarNumero(){
-        int num=pedirNumero();
-        Scanner resultado=new Scanner(System.in);
+        int num;
+        int intentos;
         int solucion;
-        for (int i = 0; i < 5; i++) {
-            do{
-                JOptionPane.showInputDialog(null,"Introduce un número entre 1 y 50, tienes "+(5-i)+" intentos");
-                solucion=resultado.nextInt();
-                if(solucion>num){
-                    JOptionPane.showMessageDialog(null, "el resultado es menor, te quedan "+(5-i)+" intentos");
-                } else if(solucion<num){
-                    JOptionPane.showMessageDialog(null, "el resultado es menor, te quedan "+(5-i)+" intentos");
-                } else{
-                    JOptionPane.showMessageDialog(null, "has acertado en "+(i+1)+"intentos, enorabuena");
-                }
-            }while(solucion!=num);
-        }
+        int i=0;
+        Scanner sc=new Scanner(System.in);
+        do{
+            solucion = Integer.parseInt(JOptionPane.showInputDialog("teclea un número de 1 a 50"));
+        }while(solucion<1||solucion>50);
+        intentos=Integer.parseInt(JOptionPane.showInputDialog("introduce el numero de intentos"));
+        do{
+            num=Integer.parseInt(JOptionPane.showInputDialog(null,"intenta adivinar el número, tienes "+(intentos-i)+" intentos"));
+            i++;
+            if(solucion==num){
+                JOptionPane.showMessageDialog(null,"Enhorabuena, acertaste en "+(i)+" intentos");
+            }else if(solucion>num){
+                JOptionPane.showMessageDialog(null,"La solucion es mayor que tu numero, te quedan "+(intentos-i)+" intentos");
+            }else{
+                JOptionPane.showMessageDialog(null,"La solucion es menor que tu numero, te quedan "+(intentos-i)+" intentos");
+            }
+        }while(num!=solucion);
+    }
+    public void jugar(){
+        String seguir;
+        do{
+            seguir=JOptionPane.showInputDialog("Para jugar pulsa 's' para salir pulsa 'n'");
+            if(seguir.equals("s")){
+                adivinarNumero();
+            }else{break;}
+        }while(seguir.equals("s"));
     }
 }
