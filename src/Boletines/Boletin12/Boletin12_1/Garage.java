@@ -42,17 +42,22 @@ public class Garage {
         }else{
             JOptionPane.showMessageDialog(null,"El garage tiene plazas disponibles");
             this.matricula=JOptionPane.showInputDialog(null,"Introduce la matricula de tu coche");
-            tiempo= Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce tiempo"));
+            tiempo= Double.parseDouble(JOptionPane.showInputDialog(null,"Introduce tiempo"));
             if(tiempo<=3){
-                precio=tiempo*1.5;
+                precio=(int)tiempo*1.5;
 
             }else{
-                precio=3*1.5+(tiempo-3)*0.2;
+                precio=3*1.5+((int)tiempo-3)*0.2;
             }
             JOptionPane.showMessageDialog(null,String.format("El precio a pagar es: %.2f",precio));
-            pago=Double.parseDouble(JOptionPane.showInputDialog(null,"Introduce el dinero"));
+            do{
+                pago=Double.parseDouble(JOptionPane.showInputDialog(null,"Introduce el dinero"));
+                if(pago<precio){
+                    JOptionPane.showMessageDialog(null,String.format("La cantidad introducida es insuficiente, el precio a pagar es: %.2f",precio),"Error",JOptionPane.WARNING_MESSAGE);
+                }
+            }while(pago<precio);
             cambio=pago-precio;
-            JOptionPane.showMessageDialog(null,String.format("Factura: \nMatricula: "+this.matricula+"\nTiempo: %.2f horas\nPrecio a pagar: %.2f €\nCantida recivida: %.2f €\nCantidad devuelta: %.2f €",tiempo,precio,pago,cambio));
+            JOptionPane.showMessageDialog(null,String.format("Matricula: "+this.matricula+"\nTiempo: %.2f horas\nPrecio a pagar: %.2f €\nCantida recivida: %.2f €\nCantidad devuelta: %.2f €",tiempo,precio,pago,cambio),"Factura:",JOptionPane.INFORMATION_MESSAGE,null);
         }
 
     }
