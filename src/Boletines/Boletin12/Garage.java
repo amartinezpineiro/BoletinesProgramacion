@@ -1,4 +1,4 @@
-package Boletines.Boletin12.Boletin12_1;
+package Boletines.Boletin12;
 
 import javax.swing.*;
 
