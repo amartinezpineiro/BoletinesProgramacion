@@ -43,7 +43,7 @@ public class Sueldo {
             salario=sc.nextDouble();
             if(salario>1750){
                 trabajadores++;
-            }else if(salario>=1000&&salario<=1750){
+            }else if(salario>=1000){
                 salarioMedio++;
                 trabajadores++;
             }else if(salario<1000&&salario>0){
