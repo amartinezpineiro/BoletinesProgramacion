@@ -7,8 +7,8 @@ public class Boletin22_1 {
         int[][] tabla=new int[3][3];
         Funciones.asignarValoresTabla(tabla);
         Funciones.verTabla(tabla,equipos,xornadas);
-        //Funciones.ordenarTabla(tabla,equipos);
-        //Funciones.verTabla(tabla,equipos,xornadas);
+        Funciones.ordenarTabla(tabla,equipos);
         Funciones.maximoGoleador(tabla,equipos,xornadas);
+        Funciones.verTabla(tabla,equipos,xornadas);
     }
 }

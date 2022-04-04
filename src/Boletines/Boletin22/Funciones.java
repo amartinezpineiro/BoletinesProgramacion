@@ -73,9 +73,7 @@ public class Funciones {
                     int variable = tabla[i][j];
                     tabla[i][j] = tabla[i][j+ 1];
                     tabla[i][j+ 1] = variable;
-                    //verTabla(tabla, equipos, xornadas);
                 }
-                //verTabla(tabla, equipos, xornadas);
             }
         }
         for (int i = 0; i < tabla.length-1; i++) {
@@ -85,10 +83,7 @@ public class Funciones {
                 tabla[i][2] = variable;
             }
         }
-        verTabla(tabla, equipos, xornadas);
         int mayorNumeroDeGoles= tabla[2][2];
-        ordenarTabla(tabla,equipos);
-        verTabla(tabla, equipos, xornadas);
         System.out.println("El mayor numero de goles marcado es: "+mayorNumeroDeGoles);
     }
 }

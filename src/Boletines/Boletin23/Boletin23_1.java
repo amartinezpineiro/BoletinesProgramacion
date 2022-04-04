@@ -13,6 +13,5 @@ public class Boletin23_1 {
         //Funciones.intercambio("hole que tel");
         //Funciones.ascii("hola que tal");
         //Funciones.charCount("Hola que tal");
-
     }
 }

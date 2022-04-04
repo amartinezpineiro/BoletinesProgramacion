@@ -8,3 +8,5 @@
 [Boletín21](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin21)
 [Boletín22](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin22)
 [Boletín23](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin23)
+[Boletín24](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin24)
+[Boletín25](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin25)
