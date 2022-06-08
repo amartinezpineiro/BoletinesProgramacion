@@ -2,11 +2,9 @@
 
 ## ÍNDICE:
 
-[Boletín18](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin18)
-[Boletín19](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin19)
-[Boletín20](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin20)
-[Boletín21](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin21)
-[Boletín22](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin22)
-[Boletín23](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin23)
-[Boletín24](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin24)
-[Boletín25](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin25)
+[Boletín27](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin27)
+[Boletín28](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin28)
+[Boletín29](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin29)
+[Boletín30](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin30)
+[Boletín32](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin32)
+[Boletín33](https://github.com/amartinezpineiro/BoletinesProgramacion/tree/master/src/Boletines/Boletin33)
